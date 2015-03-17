@@ -29,7 +29,7 @@ public class SourceTools extends JPanel
 				
 		int LC=0;
 
-		//--change on value from Open: "Keys"
+		//change on value from Open: "Keys"
 		String keys[];
 		File dir = new File("Keys");
 
@@ -72,8 +72,8 @@ public class SourceTools extends JPanel
 //		
 //		toolbar.add(butNew);
 		
-		scrl=new JScrollPane(tree);
-		scrl.setPreferredSize(new Dimension(200,600));
+		scrl = new JScrollPane(tree);
+		scrl.setPreferredSize(new Dimension(200, 600));
 		add(scrl);
 	}
 }

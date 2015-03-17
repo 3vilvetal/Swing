@@ -16,8 +16,6 @@ public class SourceToolsButtons extends JToolBar
 
 	public SourceToolsButtons()
 	{
-//		JToolBar tool_bar=new JToolBar("ToolBar");
-				
 		//New button
 		JButton butNew = new JButton();
 		String labNew = "new";
@@ -64,6 +62,7 @@ public class SourceToolsButtons extends JToolBar
 		String labStop = "stop";
 		butStop.setIcon(new ImageIcon("images/stop.png", labStop));
 		
+		//Composition
 		add(butOpen);
 		add(butNew);
 		add(butSave);

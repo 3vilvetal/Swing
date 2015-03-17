@@ -12,7 +12,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
-import action.CheckAllAction;
+import action.CheckAll;
 
 public class BrokerPanel extends JPanel
 {
@@ -26,8 +26,7 @@ public class BrokerPanel extends JPanel
 	
 	public BrokerPanel()
 	{
-		JLabel label1 = new JLabel("Single Test: ");
-		JLabel label2 = new JLabel("Multiple Test: ");
+		JLabel label = new JLabel("Multiple Test: ");
 		
 		String[] columnNames = {"Number", " Use Case ", "Broker<->DB", "Broker<->CM"};
 		data = new String [1][4];
@@ -45,7 +44,7 @@ public class BrokerPanel extends JPanel
 		scrollPane = new JScrollPane(table);
 		
 		JButton check_all = new JButton();
-		Action check_all_action = new CheckAllAction();
+		Action check_all_action = new CheckAll();
 		
 		check_all.setAction(check_all_action);
 		check_all.setText("Check All");
@@ -59,7 +58,7 @@ public class BrokerPanel extends JPanel
 		
 		//------------------Horizontal_0
 		Box hbox0=Box.createHorizontalBox();
-		hbox0.add(label2);
+		hbox0.add(label);
 		hbox0.add(Box.createGlue());
 		
 		//------------------Horizontal_1

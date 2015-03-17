@@ -20,12 +20,9 @@ public class SourcePanel extends JPanel
 	{
 		setBackground(Color.DARK_GRAY);
 		
-		//===========Picture_2
-//		URL imageURL2 = SourcePanel.class.getResource("frame_2.png");
-		JLabel image_2 = new JLabel(new ImageIcon("image/frame_2.png"));
-		
-		JLabel label=new JLabel("Enter the source of key: ");
-		area=new JTextArea(20,80);
+		JLabel image = new JLabel(new ImageIcon("image/frame_2.png"));
+		JLabel label = new JLabel("Enter the source of key: ");
+		area = new JTextArea(20,80);
 		
 		JScrollPane scroll=new JScrollPane(area);
 		
@@ -34,16 +31,19 @@ public class SourcePanel extends JPanel
 		hbox11.add(Box.createHorizontalStrut(0));
 		hbox11.add(label);	
 		hbox11.add(Box.createHorizontalGlue());
+		
 		//---------------------------2
 		Box hbox22=Box.createHorizontalBox();
 		hbox22.add(Box.createHorizontalStrut(0));
 		hbox22.add(scroll);
 		hbox11.add(Box.createHorizontalGlue());
+		
 		//---------------------------3
 		Box hbox33=Box.createHorizontalBox();
 		hbox33.add(Box.createHorizontalStrut(0));
-		hbox33.add(image_2);
+		hbox33.add(image);
 		hbox33.add(Box.createHorizontalGlue());
+		
 		//--------------------------Vertical
 		Box vbox11=Box.createVerticalBox();
 		vbox11.add(Box.createVerticalStrut(0));
@@ -51,11 +51,9 @@ public class SourcePanel extends JPanel
 		vbox11.add(Box.createVerticalStrut(0));
 		vbox11.add(hbox22);
 		vbox11.add(Box.createVerticalStrut(0));
-		
 		vbox11.add(hbox33);
 		vbox11.add(Box.createVerticalGlue());
 		
 		add(vbox11);
-		
 	}
 }

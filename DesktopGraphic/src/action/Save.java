@@ -21,11 +21,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import window.MainFrame;
 
 public class Save extends AbstractAction
-{
-	public Save()
-	{
-	}
-	
+{	
 	public void actionPerformed(ActionEvent arg0) 
 	{
 		//Dialog window

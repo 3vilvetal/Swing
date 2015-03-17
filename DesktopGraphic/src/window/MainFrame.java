@@ -43,16 +43,16 @@ public class MainFrame extends JFrame
 	public MainFrame()
 	{
 		setTitle("Bug Searcher");
-		setLocation(new Point(200,70));
-		setSize(870,800);
+		setLocation(new Point(200, 70));
+		setSize(870, 800);
 		
 		
-		content=getContentPane();
+		content = getContentPane();
 		
-		JMenuBar menu=new JMenuBar();
+		JMenuBar menu = new JMenuBar();
 		setJMenuBar(menu);
 		
-		JMenu file=new JMenu("File");
+		JMenu file = new JMenu("File");
 		file.add(new AbstractAction ("New...")
 		{
 			public void actionPerformed (ActionEvent event)
@@ -61,7 +61,7 @@ public class MainFrame extends JFrame
 			}
 		});
 		
-		JMenu about=new JMenu(" Help ");
+		JMenu about = new JMenu(" Help ");
 		about.add(new AbstractAction (" About ")
 		{
 			public void actionPerformed (ActionEvent event)
@@ -86,10 +86,10 @@ public class MainFrame extends JFrame
 
 		//------------------panels		
 		topPanel=new JPanel();
-		JPanel panel1=new JPanel();
-		JPanel panel2=new JPanel();
-		JPanel panel3=new JPanel();
-		JPanel panel4=new JPanel();
+		JPanel panel1 = new JPanel();
+		JPanel panel2 = new JPanel();
+		JPanel panel3 = new JPanel();
+		JPanel panel4 = new JPanel();
 
 		//------------------panels	
 		panel2.add(tree, BorderLayout.EAST);
@@ -98,18 +98,18 @@ public class MainFrame extends JFrame
 
 //-----------panel1 comp	
 //------------------Horizontal_1
-		Box hbox1=Box.createHorizontalBox();
+		Box hbox1 = Box.createHorizontalBox();
 		hbox1.add(Box.createHorizontalStrut(20));
 		hbox1.add(source_tools);	
 		hbox1.add(Box.createHorizontalStrut(20));
 		hbox1.add(source);
 		hbox1.add(Box.createGlue());
 //------------------Horizontal_2
-		Box hbox2=Box.createHorizontalBox();
+		Box hbox2 = Box.createHorizontalBox();
 		hbox2.add(Box.createHorizontalStrut(20));
 		hbox2.add(source_tools_buttons);
 //------------------Vertical		
-		Box vbox=Box.createVerticalBox();
+		Box vbox = Box.createVerticalBox();
 		vbox.add(Box.createVerticalStrut(5));
 		vbox.add(hbox2);
 		vbox.add(Box.createVerticalStrut(20));
@@ -119,13 +119,13 @@ public class MainFrame extends JFrame
 		
 //-----------panel4 comp	
 //------------------Horizontal_1
-				Box hbox41=Box.createHorizontalBox();
+				Box hbox41 = Box.createHorizontalBox();
 				hbox41.add(Box.createHorizontalStrut(20));
 				hbox41.add(broker_panel);	
 				hbox41.add(Box.createHorizontalStrut(20));
 				hbox41.add(Box.createGlue());
 //------------------Vertical		
-				Box vbox4=Box.createVerticalBox();
+				Box vbox4 = Box.createVerticalBox();
 				vbox4.add(Box.createVerticalStrut(5));
 				vbox4.add(Box.createVerticalStrut(20));
 				vbox4.add(hbox41);
@@ -133,22 +133,20 @@ public class MainFrame extends JFrame
 //-----------panel4 comp
 		
 //===========Tabs		
-		JTabbedPane tabs=new JTabbedPane();
+		JTabbedPane tabs = new JTabbedPane();
 		tabs.addTab("Broker",panel4);
 		tabs.addTab("Source Keywords",panel1);
 		tabs.addTab("Tree+List",panel2);
 		tabs.addTab("info",panel3);
 //===========Tabs	
 
-		//===========Picture_1
-		JLabel image_1=new JLabel(new ImageIcon("images/frame_1.png"));
-		//-----------Picture_1
+		JLabel image = new JLabel(new ImageIcon("images/frame_1.png"));
 		
-//----TOP_PANEL via STRUTS		
+		//----TOP_PANEL via STRUTS		
 		//---------------------------1
 		Box hbox11=Box.createHorizontalBox();
 		hbox11.add(Box.createHorizontalStrut(0));
-		hbox11.add(image_1);	
+		hbox11.add(image);	
 		hbox11.add(Box.createHorizontalGlue());
 		//---------------------------2
 		Box hbox22=Box.createHorizontalBox();

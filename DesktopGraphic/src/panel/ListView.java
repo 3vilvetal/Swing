@@ -15,7 +15,6 @@ public class ListView extends JPanel
 		JPanel panel = new JPanel();
 		panel.setLayout(new FlowLayout(0, 20, 3));
 		
-		
 		ListItem item1 = new ListItem("1");
 		ListItem item2 = new ListItem("2");
 		ListItem item3 = new ListItem("3");

@@ -11,10 +11,6 @@ import window.MainFrame;
 public class Open extends AbstractAction
 {
 	public String keys[];
-	public Open()
-	{	
-			
-	}
 	
 	public void actionPerformed(ActionEvent arg0) 
 	{		
