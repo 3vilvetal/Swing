@@ -1,7 +1,6 @@
 package component;
 
 import java.awt.FlowLayout;
-import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -15,10 +14,8 @@ public class ToolBar extends JToolBar
 	{
 		setLayout(new FlowLayout(0, 5, 3));
 		
-		URL imageURL = ToolBar.class.getResource("Icon_new.jpg");
-		
-		JButton butNew = new JButton("", new ImageIcon(imageURL));
-		JButton butNew1 = new JButton("TEXT", new ImageIcon(imageURL));
+		JButton butNew = new JButton("", new ImageIcon("images/Icon_new.jpg"));
+		JButton butNew1 = new JButton("TEXT", new ImageIcon("images/Icon_new.jpg"));
 		
 		add(butNew);  
 		add(butNew1);

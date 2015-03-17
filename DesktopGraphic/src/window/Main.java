@@ -1,3 +1,4 @@
+package window;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -39,7 +40,7 @@ public class Main
 						((splashDimension.height - splashAbounds.height) / 2) + 313);
 
 	    // Build the splash screen
-	    JLabel label = new JLabel(new ImageIcon("images/splash1.png"));
+	    JLabel label = new JLabel(new ImageIcon("images/splash1.png")); 
 	    JLabel copyrt = new JLabel("Copyright 2010, Vitalii Lopushansky", JLabel.CENTER);
 	    
 	    copyrt.setFont(new Font("Sans-Serif", Font.BOLD, 12));
